@@ -1,0 +1,14 @@
+.newCase {
+  width: 10%;
+  font-size: 2rem;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+  background-color: #0288d1;
+  border: 1px solid #dddbda;
+  align-items: center;
+  border-radius: 0.5rem 0.5rem;
+  position: absolute;
+  right: 12px;
+}

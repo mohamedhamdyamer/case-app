@@ -1,0 +1,18 @@
+<template>
+  <div><br><br><br><br></div>
+
+  <div class="list">
+    <input type="search" placeholder="Search cases..." oninput={handleSearchKeyInput} />
+
+    <template for:each={cases} for:item="caseObj" for:index="index">
+      <a key={caseObj.caseNumber} class="caseList" data-index={index} onclick={handleCaseClick}>
+        <div>
+            <h1 class="title">{caseObj.subject}</h1>
+            <p><span style="font-weight:bold">Priority: </span>{caseObj.priority}</p>
+            <p><span style="font-weight:bold">Status: </span>{caseObj.caseStatus}</p>
+        </div>
+      </a>
+    </template>
+
+  </div>
+</template>

@@ -1,0 +1,20 @@
+<template>
+  <header>
+    <img src="resources/lwc.png" alt="App logo">
+    <h2>My Cases</h2>
+  </header>
+  <main class="content">
+    <!-- Add components here -->
+	
+	<my-new-case></my-new-case>
+
+	<template if:true={isStateList}>
+	  <my-session-list onnavigate={handleNavigate}></my-session-list>
+	</template>
+
+    <template if:true={isStateDetails}>
+	  <my-session-details case-number={caseNumber}></my-session-details>
+	</template>
+
+  </main>
+</template>
